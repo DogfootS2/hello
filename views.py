@@ -14,6 +14,5 @@ def getServertime():
 
 # Create your views here.
 def index(request):
-    # return render(request, 'main/time.html')
     time = getServertime()
     return HttpResponse(f'{time[0]}의 서버시간\n{time[1]}년 {time[2]}월 {time[3]}일 {time[4]}시 {time[5]}분 {time[6]}초')
